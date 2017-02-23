@@ -1,0 +1,2 @@
+# SequelizedBurger
+SequelizedBurger App
