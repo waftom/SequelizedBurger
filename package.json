@@ -1,0 +1,19 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! Homework (14)",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "author": "Wellington",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0"
+  }
+}

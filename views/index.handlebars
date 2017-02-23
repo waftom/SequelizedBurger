@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 center">
+            <img src="/assets/img/burger.png" class="img_top" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Eat-Da-Burger!</h1>
+            <div class="row">
+                <div class="col-xs-6">
+                    {{#each burgers}}
+                        {{#unless this.devoured}}
+                        <div class="row">
+                            <div class="devour_btn">
+                                <!--<form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">-->
+                                <form action="/api/burgers?_method=PUT" method="POST">
+                                    <input type="hidden" name="id" value="{{this.id}}" width="72">
+                                    <input type="text" class="customer" name="customer_name" placeholder="Customer?" /><br />
+                                    <button type="submit">Devour it</button>
+                                </form>
+                            </div>
+                            <div class="burger_not_devoured">
+                                {{this.id}}. {{this.burger_name}}
+                            </div>
+                        </div>
+                        {{/unless}}
+                    {{/each}}
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6">
+                    {{#each burgers}}
+                        {{#if this.devoured}}
+                            <div class="burger_devoured">
+                                {{this.id}}. {{this.burger_name}} (Eaten by {{this.Customer.customer_name}})
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4 center">
+                    <form action="/api/burgers" method="POST">
+                        <textarea name="burger_name" id="burger_name" class="textarea"></textarea>
+                        <input type="submit" value="Submit" class="submit" />
+                    </form>
+                    <span class="txt_bottom">Enter a burger you want to eat. Click the Submit button.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

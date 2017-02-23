@@ -1,0 +1,64 @@
+body {
+    background-color: #ffe0b3;
+    color: #444;
+}
+
+.img_top {
+    margin-top: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.textarea {
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.txt_bottom {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.burger_not_devoured {
+    padding: 15px 15px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    width: 55%;
+    float: right;
+}
+
+.devour_btn {
+    float: right;
+    margin-left: 10px;
+}
+
+.burger_devoured {
+    padding: 5px 15px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    color: #BBB;
+    float: left;
+    width: 65%;
+}
+
+.submit {
+    background-color: #004466;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.customer {
+    width: 72px;
+}
